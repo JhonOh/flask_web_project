@@ -12,4 +12,8 @@ def create_app():
     def ojh():
         return render_template('ojh.html')
 
+    @app.route('./sjw')
+    def sjw():
+        return render_template('sjw.html')
+
     return app
