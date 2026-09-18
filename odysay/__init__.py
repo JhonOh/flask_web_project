@@ -8,6 +8,10 @@ def create_app():
     def index():
         return "flask team project!!"
 
+    @app.route('/ojh')
+    def ojh():
+        return render_template('ojh.html')
+
     @app.route('./sjw')
     def sjw():
         return render_template('sjw.html')
